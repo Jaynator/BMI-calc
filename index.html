@@ -11,34 +11,33 @@
 </head>
 <body>
 	<body>
-		<div class="container">
-			<h1>BMI Calculator</h1>
-			<p>Age</p>
-				<div class="dropdown-center">
-				<button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  Age
-				</button>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="#">18 - 24</a></li>
-				  <li><a class="dropdown-item" href="#">25 - 34</a></li>
-				  <li><a class="dropdown-item" href="#">35 - 44</a></li>
-				  <li><a class="dropdown-item" href="#">45 - 54</a></li>
-				  <li><a class="dropdown-item" href="#">55 - 64</a></li>
-				  <li><a class="dropdown-item" href="#">65+</a></li>
-				</ul>
-			  </div>
-			<p>Height (in cm)</p>
-	
-			<input type="text" id="height">
-	
-			<p>Weight (in kg)</p>
-	
-			<input type="text" id="weight">
-	
-			<button class="btn btn-outline-primary" id="btn">Calculate</button>
-	
-			<div id="result"></div>
+	<div class="container h-100">
+		<div class="row h-100 justify-content-center align-items-center">
+			<div class="card" style="width:19rem;">
+				<div class="card-body">
+					<h1 class="card-title">BMI Calculator</h1>
+					<p class="card-text">Calculate your BMI</p>
+					<select class="form-select flex-sm-wrap" id="age" style="margin-bottom: 20px;">
+						<option value="Age1">18 - 24 years old</option>
+						<option value="Age2">25 - 34 years old</option>
+						<option value="Age3">35 - 44 years old</option>
+						<option value="Age4">45 - 54 years old</option>
+						<option value="Age5">55 - 64 years old</option>
+						<option value="Age6">65+ years old</option>
+						</select>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="height" id="height">
+					</div>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="weight" id="weight">
+					</div>
+			
+					<button class="btn btn-outline-primary" id="btn">Calculate</button>
+					<div id="result"></div>
+				</div>
+			</div>
 		</div>
+	</div>		
 	</body>
 </body>
 </html>
