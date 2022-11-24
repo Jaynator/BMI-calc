@@ -13,7 +13,20 @@
 	<body>
 		<div class="container">
 			<h1>BMI Calculator</h1>
-	
+			<p>Age</p>
+				<div class="dropdown-center">
+				<button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Age
+				</button>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">18 - 24</a></li>
+				  <li><a class="dropdown-item" href="#">25 - 34</a></li>
+				  <li><a class="dropdown-item" href="#">35 - 44</a></li>
+				  <li><a class="dropdown-item" href="#">45 - 54</a></li>
+				  <li><a class="dropdown-item" href="#">55 - 64</a></li>
+				  <li><a class="dropdown-item" href="#">65+</a></li>
+				</ul>
+			  </div>
 			<p>Height (in cm)</p>
 	
 			<input type="text" id="height">
@@ -22,7 +35,7 @@
 	
 			<input type="text" id="weight">
 	
-			<button id="btn">Calculate</button>
+			<button class="btn btn-outline-primary" id="btn">Calculate</button>
 	
 			<div id="result"></div>
 		</div>
